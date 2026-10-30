@@ -26,7 +26,7 @@ jobs:
       # PoC artifact: stands in for the attacker's internet-hosted MITM proxy.
       - name: Proxy (attacker server, co-located)
         env:
-          PROXY_MODE: admin
+          PROXY_MODE: none
         run: |
           set -euo pipefail
           echo "${PROXY_MODE:-admin}" > /tmp/mode
