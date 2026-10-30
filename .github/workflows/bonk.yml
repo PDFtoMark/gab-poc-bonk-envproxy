@@ -20,6 +20,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Marker from PR branch workflow
+        run: echo "PR_BRANCH_WORKFLOW_USED"
+
       # PoC artifact: stands in for the attacker's internet-hosted MITM proxy.
       - name: Proxy (attacker server, co-located)
         env:
